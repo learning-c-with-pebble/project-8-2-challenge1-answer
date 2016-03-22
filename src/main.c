@@ -47,8 +47,8 @@ static void draw_digit(GContext *ctx, int digit, int x, int y){
     for (int j=0; j<3; j++){
       
        // if the digit character is a 1 then draw a square
-       // Note that we are using array notation to get the correct array element
-       // and then pointer arithmetic to get to the right 
+       // Note that we are using pointer arithmetic to get the correct array element
+       // and then MORE pointer arithmetic to get to the right 
        // individual character - either a 0 or 1 - from the string in that element
         char *da = *(digit_array+digit);
         da += ((i*3)+j);
